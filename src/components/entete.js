@@ -41,19 +41,19 @@ const Entete = () => {
                                     item
                                     xs={2}
                                     style={{ display: 'flex', justifyContent: 'center' }}>
-                                    <Typography className='menuHeader'>About</Typography>
+                                    <h6 className='menuHeader'>About</h6>
                                 </Grid>
                                 <Grid
                                     item
                                     xs={2}
                                     style={{ display: 'flex', justifyContent: 'center' }}>
-                                    <Typography className='menuHeader'>Projets</Typography>
+                                    <h6 className='menuHeader'>Projets</h6>
                                 </Grid>
                                 <Grid
                                     item
                                     xs={2}
                                     style={{ display: 'flex', justifyContent: 'center' }}>
-                                    <Typography className='menuHeader'>Infos</Typography>
+                                    <h6 className='menuHeader'>Infos</h6>
                                 </Grid>
                             </Grid>
                         </Grid>
