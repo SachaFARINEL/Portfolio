@@ -1,0 +1,6 @@
+.paperProjets {
+  text-decoration: none;
+}
+.cardProjets:hover {
+  background: #e1dbff !important;
+}
