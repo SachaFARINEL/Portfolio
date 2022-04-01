@@ -1,0 +1,12 @@
+.pointSlam {
+  color: #96e8c3;
+}
+.test {
+  position: absolute;
+  bottom: 100px;
+  right: 160px;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+}

@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+.menuHeader {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #221e41;
+  line-height: 20px;
+}
+.menuHeader:hover {
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
