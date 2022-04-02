@@ -4,6 +4,13 @@ import MainPresentation from './mainPresentation';
 import BarreSocial from './barreSocial';
 import { Grid } from '@mui/material';
 import '../styles/App.css';
+import * as React from 'react';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 
 
@@ -21,7 +28,6 @@ function App() {
           xs={1}
           style={{ background: '#FAFAFF' }}
         >
-
         </Grid>
 
         <Grid
@@ -52,27 +58,38 @@ function App() {
         container
         justifyContent="center"
       >
-
         <Grid
           item
-          xs={10.5}>
+          xs={1}
+
+        ></Grid>
+        <Grid
+          item
+          xs={10.5}
+        >
+
           <Grid
             container
             justifyContent="center"
           >
-
             <Grid
               item
               xs={8}
-              style={{ margin: 20 }}>
+              style={{ margin: 20 }}
+            >
               <h1 id="mesProjets" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41' }}>Mes projets <span style={{ fontSize: '1vw', color: '#757384', marginLeft: 40 }}>tout au long de l'année</span></h1>
             </Grid>
+            <Grid item xs={8}>
+              <Projets />
+
+            </Grid>
           </Grid>
-          <Projets
-            url={'https://hilarious-sprinkles-b1e969.netlify.app/'}
-            title={'Calculateur de cotes'}
-            image={'/assets/calculateur5.png'}
-            description={'Description'} />
+
+        </Grid>
+        <Grid
+          item
+          xs={0.5}>
+
         </Grid>
       </Grid>
     </>
