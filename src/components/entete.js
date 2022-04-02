@@ -1,6 +1,6 @@
 import { Button, Grid, Typography } from "@mui/material";
 import entete from '../styles/entete.css';
-
+import '../styles/styles.css'
 
 
 const Entete = () => {
@@ -47,7 +47,7 @@ const Entete = () => {
                                     item
                                     xs={2}
                                     style={{ display: 'flex', justifyContent: 'center' }}>
-                                    <h6 className='menuHeader'>Projets</h6>
+                                    <a href="#mesProjets"><h6 className='menuHeader'>Projets</h6></a>
                                 </Grid>
                                 <Grid
                                     item

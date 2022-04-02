@@ -1,7 +1,7 @@
 import { Grid, Box, Paper, Card, CardContent } from "@mui/material";
-import projets from '../styles/projets.css'
-import SquareFootIcon from '@mui/icons-material/SquareFoot';
-import test from '../styles/test.scss'
+import style from '../styles/styles.css'
+import '../styles/projets.css'
+
 
 
 
@@ -16,14 +16,14 @@ const Projets = (props) => {
                 <Grid
                     item
                     xs={8}
-                    style={{ marginBottom: 50 }}>
+                    style={{ marginBottom: '5vh' }}>
                     <div className="divProjets">
                         <a className='cardProjets' target='_blank' href='https://hilarious-sprinkles-b1e969.netlify.app/'>
                             <Card>
                                 <CardContent style={{ background: '#FAFAFF', paddingTop: 24, height: '20vh' }}>
                                     <Grid container>
                                         <Grid item xs={7} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
-                                            <img style={{ width: '100%', paddingRight: 15 }} src='/assets/portail.svg'></img>
+                                            <img style={{ width: '95%', paddingRight: 15 }} src='/assets/portail.svg'></img>
                                         </Grid>
                                         <Grid item xs={5} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                             <h1 style={{ fontFamily: 'Inter', color: '#998282', fontSize: '1.3vw' }}>Calculateur de cotes</h1>
@@ -42,24 +42,46 @@ const Projets = (props) => {
                 <Grid
                     item
                     xs={8}
-                    style={{ marginBottom: 100 }}>
+                    style={{ marginBottom: '5vh' }}>
                     <div className="divProjets">
-                        <Card>
-                            <CardContent style={{ background: '#FAFAFF', paddingTop: 24, height: '20vh' }}>
-                                <Grid container>
-                                    <Grid item xs={5} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                        <h1 style={{ fontFamily: 'Inter', color: '#E8505B', fontSize: '1.3vw', textAlign: 'center' }}>Gestionnaire de rendez-vous</h1>
-                                        <span style={{ textAlign: 'center', fontFamily: 'Inter', fontSize: '0.9vw' }}>Projet de formation réalisé avec <br /><span style={{ color: '#7377AD', fontWeight: '600' }}>PHP </span>et <span style={{ color: '#1064A5', fontWeight: '600' }}>jQuery </span></span>
+                        <a style={{ textDecoration: 'none' }} className='cardProjets' target='_blank' href='https://github.com/SachaFARINEL/Promed'>
+                            <Card>
+                                <CardContent style={{ background: '#FAFAFF', height: '20vh' }}>
+                                    <Grid container>
+                                        <Grid item xs={5} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                            <h1 style={{ fontFamily: 'Inter', color: '#E8505B', fontSize: '1.3vw', textAlign: 'center' }}>Gestionnaire de rendez-vous</h1>
+                                            <span style={{ textAlign: 'center', fontFamily: 'Inter', fontSize: '0.9vw' }}>Projet de fin d'études réalisé avec <br /><span style={{ color: '#7377AD', fontWeight: '600' }}>PHP </span>et <span style={{ color: '#1064A5', fontWeight: '600' }}>jQuery </span></span>
+                                        </Grid>
+                                        <Grid item xs={7} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+                                            <img style={{ width: '80%', paddingLeft: 15 }} src='/assets/promed2.svg'></img>
+                                        </Grid>
                                     </Grid>
-                                    <Grid item xs={7} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+                                </CardContent>
+                            </Card>
+                        </a>
+                    </div>
+                </Grid>
 
-                                        <img style={{ width: '80%', paddingLeft: 15 }} src='/assets/promed2.svg'></img>
-
+                <Grid
+                    item
+                    xs={8}
+                >
+                    <div className="divProjets" style={{ marginBottom: 200 }}>
+                        <a className='cardProjets' target='_blank' href='https://github.com/SachaFARINEL/Staggers'>
+                            <Card>
+                                <CardContent style={{ background: '#FAFAFF', paddingTop: 24, height: '20vh' }}>
+                                    <Grid container>
+                                        <Grid item xs={7} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+                                            <img style={{ width: '50%', paddingRight: 15 }} src='/assets/staggers.svg'></img>
+                                        </Grid>
+                                        <Grid item xs={5} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                            <h1 style={{ fontFamily: 'Inter', color: '#2D2442', fontSize: '1.3vw' }}>Adopte un stagiaire</h1>
+                                            <span style={{ textAlign: 'center', fontFamily: 'Inter', fontSize: '0.9vw' }}>Projet de fin d'études réalisé avec <br /><span style={{ color: '#E11E23', fontWeight: '600' }}>Java </span>et <span style={{ color: '#DB6900', fontWeight: '600' }}>JavaFX </span></span>
+                                        </Grid>
                                     </Grid>
-
-                                </Grid>
-                            </CardContent>
-                        </Card>
+                                </CardContent>
+                            </Card>
+                        </a>
                     </div>
 
 

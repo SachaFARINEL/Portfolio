@@ -5,11 +5,6 @@ import BarreSocial from './barreSocial';
 import { Grid } from '@mui/material';
 import '../styles/App.css';
 import * as React from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 
@@ -79,7 +74,7 @@ function App() {
             >
               <h1 id="mesProjets" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41' }}>Mes projets <span style={{ fontSize: '1vw', color: '#757384', marginLeft: 40 }}>tout au long de l'année</span></h1>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={10}>
               <Projets />
 
             </Grid>
