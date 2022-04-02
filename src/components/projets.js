@@ -16,46 +16,58 @@ const Projets = (props) => {
                 <Grid
                     item
                     xs={8}
+                    style={{ marginBottom: 50 }}>
+                    <div className="divProjets">
+                        <a className='cardProjets' target='_blank' href='https://hilarious-sprinkles-b1e969.netlify.app/'>
+                            <Card>
+                                <CardContent style={{ background: '#FAFAFF', paddingTop: 24, height: '20vh' }}>
+                                    <Grid container>
+                                        <Grid item xs={7} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+                                            <img style={{ width: '100%', paddingRight: 15 }} src='/assets/portail.svg'></img>
+                                        </Grid>
+                                        <Grid item xs={5} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                            <h1 style={{ fontFamily: 'Inter', color: '#998282', fontSize: '1.3vw' }}>Calculateur de cotes</h1>
+                                            <span style={{ textAlign: 'center', fontFamily: 'Inter', fontSize: '0.9vw' }}>Projet de stage réalisé avec <br /><span style={{ color: '#5ED3F3', fontWeight: '600' }}>React JS </span>et <span style={{ color: '#007AC1', fontWeight: '600' }}>Material UI </span></span>
+                                        </Grid>
+                                    </Grid>
+                                </CardContent>
+                            </Card>
+                        </a>
+                    </div>
+
+
+
+                </Grid>
+
+                <Grid
+                    item
+                    xs={8}
                     style={{ marginBottom: 100 }}>
+                    <div className="divProjets">
+                        <Card>
+                            <CardContent style={{ background: '#FAFAFF', paddingTop: 24, height: '20vh' }}>
+                                <Grid container>
+                                    <Grid item xs={5} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                        <h1 style={{ fontFamily: 'Inter', color: '#E8505B', fontSize: '1.3vw', textAlign: 'center' }}>Gestionnaire de rendez-vous</h1>
+                                        <span style={{ textAlign: 'center', fontFamily: 'Inter', fontSize: '0.9vw' }}>Projet de formation réalisé avec <br /><span style={{ color: '#7377AD', fontWeight: '600' }}>PHP </span>et <span style={{ color: '#1064A5', fontWeight: '600' }}>jQuery </span></span>
+                                    </Grid>
+                                    <Grid item xs={7} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
 
-                    <Card>
-                        <CardContent style={{ background: '#FAFAFF', paddingTop: 24 }}>
-                            <Grid container>
-                                <Grid item xs={7} style={{ borderRight: '1px solid grey' }}>
-                                    <img style={{ width: '100%', paddingRight: 15 }} src='/assets/portail.svg'></img>
+                                        <img style={{ width: '80%', paddingLeft: 15 }} src='/assets/promed2.svg'></img>
+
+                                    </Grid>
+
                                 </Grid>
-                                <Grid item xs={5} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                    <h1 style={{ fontFamily: 'Inter', color: '#998282', fontSize: '1.3vw' }}>Calculateur de cotes</h1>
-                                    <span style={{ textAlign: 'center', fontFamily: 'Inter', fontSize: '0.9vw' }}>Projet de stage réalisé avec <br /><span style={{ color: '#5ED3F3', fontWeight: '600' }}>React JS </span>et <span style={{ color: '#007AC1', fontWeight: '600' }}>Material UI </span></span>
-                                </Grid>
-                            </Grid>
-                        </CardContent>
-                    </Card>
-                    {/* <a className='paperProjets' href={props.url} target="_blank"> */}
+                            </CardContent>
+                        </Card>
+                    </div>
 
-
-
-                    {/* <Grid
-                        item
-                        xs={12}
-                        style={{ display: 'flex' }}
-                    >
-
-                        <img style={{ width: '50%' }} src={props.image}></img>
-
-                    </Grid> */}
-
-                    {/* <Grid item xs={4} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid red' }}>
-                            <h1 style={{ fontFamily: 'Inter', fontSize: '1.5vw', color: '#221e41' }}>{props.title}</h1>
-                            {props.description}
-                            <button style={{ height: '3vh' }} class="btn btn--stripe">Button</button>
-                        </Grid> */}
 
 
                 </Grid>
 
 
-            </Grid>
+            </Grid >
         </>
     )
 };
