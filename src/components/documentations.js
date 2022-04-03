@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, Card, CardContent, Grid, Modal, Typography } from '@mui/material';
+import { Button, Card, CardContent, CircularProgress, Grid, Modal, Typography } from '@mui/material';
 import '../styles/styles.css'
 import { Box } from '@mui/system';
 
@@ -34,12 +34,14 @@ const Documentations = (props) => {
             </Grid>
 
             <Modal
+                keepMounted
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={style}>
+
                     <iframe src={props.modal} width='100%' height='100%'></iframe>
                 </Box>
             </Modal>

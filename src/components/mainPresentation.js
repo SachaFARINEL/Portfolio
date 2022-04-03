@@ -18,8 +18,15 @@ const MainPresentation = () => {
                 <Grid item xs={3} style={{ display: 'flex', justifyContent: 'end' }}>
                     <img style={{ maxWidth: '90%' }} src="/assets/body.svg"></img>
                 </Grid>
-
+                <Grid item xs={8} style={{ display: 'flex', justifyContent: 'center' }}>
+                    <div className="container" style={{ marginTop: 25 }}>
+                        <div className="chevron"></div>
+                        <div className="chevron"></div>
+                        <div className="chevron"></div>
+                    </div>
+                </Grid>
             </Grid>
+
         </>
     )
 };
