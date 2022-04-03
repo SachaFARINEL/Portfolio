@@ -20,7 +20,7 @@ const Documentations = () => {
                 </Grid>
 
                 <Grid item xs={2} >
-                    <div className='divProjets' style={{ width: '20vh', height: '20vh', overflow: 'hidden', borderRadius: '2vh', background: '#CDFFE8' }}>
+                    <div className='divProjets' style={{ width: '20vh', height: '20vh', overflow: 'hidden', borderRadius: '2vh', background: '#CCF2FF' }}>
                         <img style={{ width: '100%' }} src='assets/mitm3.svg'></img>
                     </div>
                 </Grid>
