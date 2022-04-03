@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import barreSocial from '../styles/barreSocial.css'
-import styles from '../styles/styles.css'
+import '../styles/styles.css'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';

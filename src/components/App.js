@@ -1,9 +1,10 @@
+import * as React from 'react';
 import Entete from './entete';
 import Projets from './projets';
 import MainPresentation from './mainPresentation';
 import BarreSocial from './barreSocial';
+import Documentations from './documentations';
 import { Grid } from '@mui/material';
-import * as React from 'react';
 
 
 
@@ -50,9 +51,10 @@ function App() {
         <Grid item xs={10} style={{ background: '#FAFAFF' }}>
           <Grid container justifyContent="center">
             <Grid item xs={8} style={{ margin: '5vh' }}>
-              <h1 id="mesDocumentations" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41' }}>Mes documentations produites <span style={{ fontSize: '1vw', color: '#757384', marginLeft: 40 }}>tout au long de l'année</span></h1>
+              <h1 id="mesDocumentations" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41' }}>Mes documentations produites <span style={{ fontSize: '1vw', color: '#757384', marginLeft: 40, fontWeight: 'lighter' }}>tout au long de l'année</span></h1>
             </Grid>
             <Grid item xs={10}>
+              <Documentations />
 
             </Grid>
           </Grid>
