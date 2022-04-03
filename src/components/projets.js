@@ -8,22 +8,16 @@ import '../styles/projets.css'
 const Projets = (props) => {
     return (
         <>
-            <Grid
-                container
-                justifyContent="center"
-            >
+            <Grid container justifyContent="center">
 
-                <Grid
-                    item
-                    xs={8}
-                    style={{ marginBottom: '5vh' }}>
+                <Grid item xs={8} style={{ marginBottom: '5vh' }}>
                     <div className="divProjets">
                         <a className='cardProjets' target='_blank' href='https://hilarious-sprinkles-b1e969.netlify.app/'>
                             <Card>
                                 <CardContent style={{ background: '#FAFAFF', paddingTop: 24, height: '20vh' }}>
                                     <Grid container>
                                         <Grid item xs={7} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
-                                            <img style={{ width: '95%', paddingRight: 15 }} src='/assets/portail.svg'></img>
+                                            <img style={{ width: '100%', paddingRight: 15 }} src='/assets/portail.svg'></img>
                                         </Grid>
                                         <Grid item xs={5} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                             <h1 style={{ fontFamily: 'Inter', color: '#998282', fontSize: '1.3vw' }}>Calculateur de cotes</h1>
@@ -39,10 +33,7 @@ const Projets = (props) => {
 
                 </Grid>
 
-                <Grid
-                    item
-                    xs={8}
-                    style={{ marginBottom: '5vh' }}>
+                <Grid item xs={8} style={{ marginBottom: '5vh' }}>
                     <div className="divProjets">
                         <a style={{ textDecoration: 'none' }} className='cardProjets' target='_blank' href='https://github.com/SachaFARINEL/Promed'>
                             <Card>
@@ -62,11 +53,8 @@ const Projets = (props) => {
                     </div>
                 </Grid>
 
-                <Grid
-                    item
-                    xs={8}
-                >
-                    <div className="divProjets" style={{ marginBottom: 200 }}>
+                <Grid item xs={8}>
+                    <div className="divProjets" style={{ marginBottom: '5vh' }}>
                         <a className='cardProjets' target='_blank' href='https://github.com/SachaFARINEL/Staggers'>
                             <Card>
                                 <CardContent style={{ background: '#FAFAFF', paddingTop: 24, height: '20vh' }}>
