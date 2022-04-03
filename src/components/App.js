@@ -54,8 +54,26 @@ function App() {
               <h1 id="mesDocumentations" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41' }}>Mes documentations produites <span style={{ fontSize: '1vw', color: '#757384', marginLeft: 40, fontWeight: 'lighter' }}>tout au long de l'année</span></h1>
             </Grid>
             <Grid item xs={10}>
-              <Documentations />
-
+              <Grid container justifyContent='center'>
+                <Documentations
+                  image={'assets/nas3.svg'}
+                  titre={["Mise en", <br />, "place d'un NAS"]}
+                  modal={'/assets/TP_NAS_Sacha_FARINEL.pdf'}
+                  backgroundCouleur={'#E1DBFF'}
+                />
+                <Documentations
+                  image={'assets/cloud3.svg'}
+                  titre={"Installation de Nextcloud"}
+                  modal={'/assets/TP_NEXTCLOUD_Sacha_FARINEL.pdf'}
+                  backgroundCouleur={'#FDE7E9'}
+                />
+                <Documentations
+                  image={'assets/mitm3.svg'}
+                  titre={"Les attaques Man In The Middle"}
+                  modal={'/assets/TP_MITM_Sacha_FARINEL.pdf'}
+                  backgroundCouleur={'#CCF2FF'}
+                />
+              </Grid>
             </Grid>
           </Grid>
         </Grid>

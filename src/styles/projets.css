@@ -43,6 +43,7 @@
 .containerDoc {
   transition: all 0.2s ease-in-out;
   position: relative;
+  cursor: pointer;
 }
 .containerDoc:hover {
   transform: scale(1.1);

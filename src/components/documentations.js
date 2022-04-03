@@ -1,43 +1,49 @@
 import * as React from 'react';
-import { Card, CardContent, Grid } from '@mui/material';
+import { Button, Card, CardContent, Grid, Modal, Typography } from '@mui/material';
 import '../styles/styles.css'
+import { Box } from '@mui/system';
 
-const Documentations = () => {
+const Documentations = (props) => {
+
+
+    const style = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: '50%',
+        height: '90%',
+        boxShadow: 24,
+
+    };
+
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
     return (
         <>
-            <Grid container justifyContent='center'>
-                <Grid item xs={2} style={{ display: 'flex', justifyContent: 'center' }} >
 
-                    <div className='containerDoc' >
-                        <div className='transitionGrowth' style={{ width: '20vh', height: '20vh', overflow: 'hidden', borderRadius: '2vh', background: '#E1DBFF' }}>
-                            <img style={{ width: '100%' }} src='assets/nas3.svg'></img>
-                        </div>
-                        <figcaption className='descriptionDoc' style={{ fontSize: '' }}>Configuration d'un NAS</figcaption>
+            <Grid item xs={2} style={{ display: 'flex', justifyContent: 'center' }} >
+
+                <div className='containerDoc' onClick={handleOpen} >
+                    <div className='transitionGrowth' style={{ width: '20vh', height: '20vh', overflow: 'hidden', borderRadius: '2vh', background: props.backgroundCouleur }}>
+                        <img style={{ width: '100%' }} src={props.image}></img>
                     </div>
-                </Grid>
-
-                <Grid item xs={2} style={{ display: 'flex', justifyContent: 'center' }} >
-
-                    <div className='containerDoc' onClick={() => console.log('test')} >
-                        <div className='transitionGrowth' style={{ width: '20vh', height: '20vh', overflow: 'hidden', borderRadius: '2vh', background: '#FDE7E9' }}>
-                            <img style={{ width: '100%' }} src='assets/cloud3.svg'></img>
-                        </div>
-                        <figcaption className='descriptionDoc' style={{ fontSize: '' }}>Installation de Nextcloud</figcaption>
-                    </div>
-
-                </Grid>
-
-                <Grid item xs={2} style={{ display: 'flex', justifyContent: 'center' }}>
-                    <div className='containerDoc' >
-                        <div className='transitionGrowth' style={{ width: '20vh', height: '20vh', overflow: 'hidden', borderRadius: '2vh', background: '#CCF2FF' }}>
-                            <img style={{ width: '100%' }} src='assets/mitm3.svg'></img>
-                        </div>
-                        <figcaption className='descriptionDoc'>Les attaques Man In The Middle</figcaption>
-                    </div>
-
-                </Grid>
-
+                    <figcaption className='descriptionDoc' style={{ fontSize: '2.5vh' }}>{props.titre}</figcaption>
+                </div>
             </Grid>
+
+            <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box sx={style}>
+                    <iframe src={props.modal} width='100%' height='100%'></iframe>
+                </Box>
+            </Modal>
+
 
         </>
     )
