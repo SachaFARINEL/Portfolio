@@ -76,6 +76,12 @@ function App() {
                   modal={'/assets/TP_MITM_Sacha_FARINEL.pdf'}
                   backgroundCouleur={'#CCF2FF'}
                 />
+                <Documentations
+                  image={'assets/glpi.svg'}
+                  titre={"Intégration et adaptation d'un service"}
+                  modal={'/assets/TP_GLPI_SACHA_FARINEL.pdf'}
+                  backgroundCouleur={'#CDFFE8'}
+                />
               </Grid>
             </Grid>
           </Grid>
