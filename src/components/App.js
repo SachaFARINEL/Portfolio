@@ -39,7 +39,7 @@ function App() {
         <Grid item xs={10}>
           <Grid container justifyContent="center">
             <Grid item xs={8} style={{ margin: '5vh' }}>
-              <h1 id="leBTS" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41', display: "flex", alignItems: "center" }}>Présentation du BTS <a style={{ display: "flex", alignItems: "center", marginLeft: "2vw" }} target='_blank' href="https://sio56.org"><img style={{ width: "2.5vw" }} src="assets/navigateur.gif"></img></a></h1>
+              <h1 id="leBTS" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41', display: "flex", alignItems: "center" }}>Présentation du BTS <a style={{ display: "flex", alignItems: "center", marginLeft: "2vw" }} target='_blank' href="https://sio56.org"><img style={{ width: "2vw" }} src="assets/navigateur.gif"></img></a></h1>
               <span style={{ fontSize: "1vw", fontFamily: "Lato", color: "#757384" }}>Services informatiques aux organisations option solutions logicielles et applications métiers</span>
             </Grid>
             <Grid item xs={10}>
