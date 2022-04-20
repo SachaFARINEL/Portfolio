@@ -15,8 +15,8 @@ const BarreSocial = () => {
                 </Grid>
                 <Grid item xs={1} style={{ display: 'flex', justifyContent: 'space-evenly' }}>
                     <a href='https://github.com/SachaFARINEL'><GitHubIcon className='git' style={{ color: '#757384' }} /></a>
-                    <a href='#'><LinkedInIcon className='link' style={{ color: '#757384' }} /></a>
-                    <a href='#'><TwitterIcon className='twitter' style={{ color: '#757384' }} /></a>
+                    <a href='https://www.linkedin.com/in/farinelsacha/'><LinkedInIcon className='link' style={{ color: '#757384' }} /></a>
+                    <a href='https://twitter.com/FarinelSacha'><TwitterIcon className='twitter' style={{ color: '#757384' }} /></a>
                 </Grid>
             </Grid>
         </>

@@ -16,7 +16,7 @@ a {
 
 .transitionLeft {
   /* This section calls the slideInFromLeft animation we defined above */
-  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .container {

@@ -8,6 +8,7 @@ import Documentations from './documentations';
 import Competences from './competences';
 import { Button, Grid } from '@mui/material';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import Presentation from './presentation';
 
 
 
@@ -34,22 +35,42 @@ function App() {
         </Grid>
       </Grid>
 
-      <Grid container>
+      <Grid container style={{ marginBottom: '10vh' }}>
         <Grid item xs={1}></Grid>
         <Grid item xs={10}>
           <Grid container justifyContent="center">
+
             <Grid item xs={8} style={{ margin: '5vh' }}>
-              <h1 id="leBTS" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41', display: "flex", alignItems: "center" }}>Présentation du BTS <a style={{ display: "flex", alignItems: "center", marginLeft: "2vw" }} target='_blank' href="https://sio56.org"><img style={{ width: "2vw" }} src="assets/navigateur.gif"></img></a></h1>
-              <span style={{ fontSize: "1vw", fontFamily: "Lato", color: "#757384" }}>Services informatiques aux organisations option solutions logicielles et applications métiers</span>
+              <h1 id="maPresentation" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41' }}>A propos <Button href='assets/pdf/CV_FARINEL_Sacha.pdf' download="CV_FARINEL_Sacha" variant="outlined" size='small' startIcon={<CloudDownloadIcon />} style={{ marginLeft: 20, color: '#8A6FFF', borderColor: '#8A6FFF' }}>
+                Mon CV
+              </Button></h1>
             </Grid>
             <Grid item xs={10}>
-              <Greta />
+              <Presentation />
             </Grid>
           </Grid>
         </Grid>
         <Grid item xs={1}></Grid>
       </Grid>
 
+      <Grid container >
+        <Grid item xs={0.5} ></Grid>
+        <Grid item xs={0.5} style={{ background: '#FAFAFF', borderTopLeftRadius: '8vh', borderBottomLeftRadius: '8vh' }}></Grid>
+        <Grid item xs={10} style={{ background: '#FAFAFF', borderTopRightRadius: '8vh', borderBottomRightRadius: '8vh' }}>
+          <Grid container justifyContent="center" style={{ paddingBottom: '10vh' }}>
+            <Grid item xs={8} style={{ margin: '5vh' }}>
+              <h1 id="leBTS" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41', display: "flex", alignItems: "center" }}>Présentation du BTS <a style={{ display: "flex", alignItems: "center", marginLeft: "2vw" }} target='_blank' href="https://sio56.org"><img style={{ width: "2vw", marginTop: "0.7vh" }} src="assets/navigateur.gif"></img></a></h1>
+              <span style={{ fontSize: "1vw", fontFamily: "Lato", color: "#757384" }}>Services informatiques aux organisations option solutions logicielles et applications métiers</span>
+            </Grid>
+            <Grid item xs={10} >
+              <Grid container justifyContent='center'>
+                <Greta />
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item xs={1}></Grid>
+      </Grid>
 
 
       <Grid container height='100vh'>

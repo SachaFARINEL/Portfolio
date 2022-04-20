@@ -15,7 +15,7 @@ const Greta = () => {
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <Typography style={{ fontFamily: "Lato", fontSize: "1.2vw" }}>Formation</Typography>
+                            <Typography style={{ fontFamily: "Lato", fontSize: "1vw" }}>Formation</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography style={{ fontFamily: "Lato", fontSize: "0.9vw", color: "#757384" }}>
@@ -30,7 +30,7 @@ const Greta = () => {
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <Typography style={{ fontFamily: "Lato", fontSize: "1.2vw" }}>Prérequis</Typography>
+                            <Typography style={{ fontFamily: "Lato", fontSize: "1vw" }}>Prérequis</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography style={{ fontFamily: "Lato", fontSize: "0.9vw", color: "#757384" }}>
@@ -46,7 +46,7 @@ const Greta = () => {
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <Typography style={{ fontFamily: "Lato", fontSize: "1.2vw" }}>Objectifs</Typography>
+                            <Typography style={{ fontFamily: "Lato", fontSize: "1vw" }}>Objectifs</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography style={{ fontFamily: "Lato", fontSize: "0.9vw", color: "#757384" }}>
@@ -76,7 +76,7 @@ const Greta = () => {
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <Typography style={{ fontFamily: "Lato", fontSize: "1.2vw" }}>Epreuves de l’examen</Typography>
+                            <Typography style={{ fontFamily: "Lato", fontSize: "1vw" }}>Epreuves de l’examen</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography style={{ fontFamily: "Lato", fontSize: "0.9vw", color: "#757384" }}>
