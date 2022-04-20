@@ -61,25 +61,25 @@ function App() {
                 <Documentations
                   image={'assets/nas3.svg'}
                   titre={["Mise en", <br />, "place d'un NAS"]}
-                  modal={'/assets/TP_NAS_Sacha_FARINEL.pdf'}
+                  modal={'assets/pdf/documentation/TP_NAS_Sacha_FARINEL.pdf'}
                   backgroundCouleur={'#E1DBFF'}
                 />
                 <Documentations
                   image={'assets/cloud3.svg'}
                   titre={"Installation de Nextcloud"}
-                  modal={'/assets/TP_NEXTCLOUD_Sacha_FARINEL.pdf'}
+                  modal={'assets/pdf/documentation/TP_NEXTCLOUD_Sacha_FARINEL.pdf'}
                   backgroundCouleur={'#FDE7E9'}
                 />
                 <Documentations
                   image={'assets/mitm3.svg'}
                   titre={"Les attaques Man In The Middle"}
-                  modal={'/assets/TP_MITM_Sacha_FARINEL.pdf'}
+                  modal={'assets/pdf/documentation/TP_MITM_Sacha_FARINEL.pdf'}
                   backgroundCouleur={'#CCF2FF'}
                 />
                 <Documentations
                   image={'assets/glpi.svg'}
                   titre={"Intégration et adaptation d'un service"}
-                  modal={'/assets/TP_GLPI_SACHA_FARINEL.pdf'}
+                  modal={'assets/pdf/documentation/TP_GLPI_SACHA_FARINEL.pdf'}
                   backgroundCouleur={'#CDFFE8'}
                 />
               </Grid>
