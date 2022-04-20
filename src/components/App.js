@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Entete from './entete';
+import Greta from './greta';
 import Projets from './projets';
 import MainPresentation from './mainPresentation';
 import BarreSocial from './barreSocial';
@@ -32,6 +33,24 @@ function App() {
           <BarreSocial />
         </Grid>
       </Grid>
+
+      <Grid container>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={10}>
+          <Grid container justifyContent="center">
+            <Grid item xs={8} style={{ margin: '5vh' }}>
+              <h1 id="leBTS" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41', display: "flex", alignItems: "center" }}>Présentation du BTS <a style={{ display: "flex", alignItems: "center", marginLeft: "2vw" }} target='_blank' href="https://sio56.org"><img style={{ width: "2.5vw" }} src="assets/navigateur.gif"></img></a></h1>
+              <span style={{ fontSize: "1vw", fontFamily: "Lato", color: "#757384" }}>Services informatiques aux organisations option solutions logicielles et applications métiers</span>
+            </Grid>
+            <Grid item xs={10}>
+              <Greta />
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item xs={1}></Grid>
+      </Grid>
+
+
 
       <Grid container height='100vh'>
         <Grid item xs={1}></Grid>
@@ -88,13 +107,12 @@ function App() {
         </Grid>
         <Grid item xs={1} style={{ background: '#FAFAFF' }}></Grid>
       </Grid>
-
       <Grid container height='100vh'>
         <Grid item xs={1}></Grid>
         <Grid item xs={10}>
           <Grid container justifyContent="center">
             <Grid item xs={8} style={{ margin: '5vh' }}>
-              <h1 id="mesProjets" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41' }}>Mes compétences développées <Button href='#' download="TableauDeSynthèse_FARINEL_Sacha" variant="outlined" size='small' startIcon={<CloudDownloadIcon />} style={{ marginLeft: 20, color: '#8A6FFF', borderColor: '#8A6FFF' }}>
+              <h1 id="mesProjets" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41' }}>Mes compétences développées <Button href='assets/pdf/Preuves/FARINEL_Sacha_TableauDeSynthèse.pdf' download="TableauDeSynthèse_FARINEL_Sacha" variant="outlined" size='small' startIcon={<CloudDownloadIcon />} style={{ marginLeft: 20, color: '#8A6FFF', borderColor: '#8A6FFF' }}>
                 Télécharger
               </Button></h1>
 
