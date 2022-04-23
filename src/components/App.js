@@ -63,7 +63,7 @@ function App() {
           <Grid container justifyContent="center" style={{ paddingBottom: '3rem' }}>
             <Grid item md={8} xs={10} style={{ margin: '1rem' }}>
               <h1 id="leBTS" style={{ fontFamily: 'Inter', fontSize: '1.8rem', color: '#221e41', display: "flex", alignItems: "center" }}>Présentation du BTS <a style={{ display: "flex", alignItems: "center", marginLeft: "1rem" }} target='_blank' href="https://sio56.org"><img style={{ width: "1.5rem", marginTop: "0.3rem" }} src="assets/navigateur.gif"></img></a></h1>
-              <span style={{ fontSize: "0.9rem", fontFamily: "Lato", color: "#757384" }}>Services informatiques aux organisations option solutions logicielles et applications métiers</span>
+              <span style={{ fontSize: "1.2rem", fontFamily: "Lato", color: "#757384" }}>Services informatiques aux organisations option solutions logicielles et applications métiers</span>
             </Grid>
             <Grid item xs={10} >
               <Grid container justifyContent='center' style={{ marginTop: '1rem' }}>

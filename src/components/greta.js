@@ -15,10 +15,10 @@ const Greta = () => {
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <Typography style={{ fontFamily: "Lato", fontSize: "1rem" }}>Formation</Typography>
+                            <Typography style={{ fontFamily: "Lato", fontSize: "1.5rem" }}>Formation</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography style={{ fontFamily: "Lato", fontSize: "0.9rem", color: "#757384" }}>
+                            <Typography style={{ fontFamily: "Lato", fontSize: "1.2rem", color: "#757384" }}>
                                 <p>La formation se déroule de manière condensée sur 9 mois dont 10 semaines de stage en entreprise</p>
                             </Typography>
                         </AccordionDetails>
@@ -30,10 +30,10 @@ const Greta = () => {
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <Typography style={{ fontFamily: "Lato", fontSize: "1rem" }}>Prérequis</Typography>
+                            <Typography style={{ fontFamily: "Lato", fontSize: "1.5rem" }}>Prérequis</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography style={{ fontFamily: "Lato", fontSize: "0.9rem", color: "#757384" }}>
+                            <Typography style={{ fontFamily: "Lato", fontSize: "1.2rem", color: "#757384" }}>
                                 <p>Être titulaire d’une qualification de niveau 4 (baccalauréat) et/ou d’une expérience significative dans le domaine du numérique</p>
                                 <p>Avoir une appétence pour le numérique</p>
                             </Typography>
@@ -46,10 +46,10 @@ const Greta = () => {
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <Typography style={{ fontFamily: "Lato", fontSize: "1rem" }}>Objectifs</Typography>
+                            <Typography style={{ fontFamily: "Lato", fontSize: "1.5rem" }}>Objectifs</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography style={{ fontFamily: "Lato", fontSize: "0.9rem", color: "#757384" }}>
+                            <Typography style={{ fontFamily: "Lato", fontSize: "1.2rem", color: "#757384" }}>
                                 <p>Le BTS SIO forme des professionnel.le.s en capacité de participer au développement et au suivi du cycle de vie d’applications logicielles :</p>
                                 <ul>
                                     <li> Définir les solutions adaptées en fonction du besoin des utilisateurs (analyse des besoins client interne et étude de l’offre de marché en progiciels)</li>
@@ -76,10 +76,10 @@ const Greta = () => {
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <Typography style={{ fontFamily: "Lato", fontSize: "1rem" }}>Epreuves de l’examen</Typography>
+                            <Typography style={{ fontFamily: "Lato", fontSize: "1.5rem" }}>Epreuves de l’examen</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography style={{ fontFamily: "Lato", fontSize: "0.9rem", color: "#757384" }}>
+                            <Typography style={{ fontFamily: "Lato", fontSize: "1.2rem", color: "#757384" }}>
                                 <p>E1 – Culture et communication</p>
                                 <p>E2 – Mathématiques pour l’informatique</p>
                                 <p>E3 – Culture économique, juridique et managériale pour l’informatique</p>
