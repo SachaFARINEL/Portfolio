@@ -61,7 +61,7 @@ const Competences = () => {
     return (
         <>
             <Grid container justifyContent='center'>
-                <Grid item xs={8}>
+                <Grid item md={8} xs={10}>
                     <h4 style={{ textAlign: 'center' }}>C1 - Gérer le patrimoine informatique </h4>
                     <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
@@ -113,7 +113,7 @@ const Competences = () => {
                     </Accordion>
                 </Grid>
 
-                <Grid item xs={8}>
+                <Grid item md={8} xs={10}>
                     <h4 style={{ textAlign: 'center' }}>C2 - Répondre aux incidents et aux demandes d’assistance et d’évolution </h4>
                     <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
                         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
@@ -141,7 +141,7 @@ const Competences = () => {
                     </Accordion>
                 </Grid>
 
-                <Grid item xs={8}>
+                <Grid item md={8} xs={10}>
                     <h4 style={{ textAlign: 'center' }}>C3 - Développer la présence en ligne de l’organisation </h4>
                     <Accordion expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
                         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
@@ -169,7 +169,7 @@ const Competences = () => {
                     </Accordion>
                 </Grid>
 
-                <Grid item xs={8}>
+                <Grid item md={8} xs={10}>
                     <h4 style={{ textAlign: 'center' }}>C4 - Travailler en mode projet </h4>
                     <Accordion expanded={expanded === 'panel13'} onChange={handleChange('panel13')}>
                         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
@@ -197,7 +197,7 @@ const Competences = () => {
                     </Accordion>
                 </Grid>
 
-                <Grid item xs={8}>
+                <Grid item md={8} xs={10}>
                     <h4 style={{ textAlign: 'center' }}>C5 - Mettre à disposition des utilisateurs un service informatique </h4>
                     <Accordion expanded={expanded === 'panel16'} onChange={handleChange('panel16')}>
                         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
@@ -225,7 +225,7 @@ const Competences = () => {
                     </Accordion>
                 </Grid>
 
-                <Grid item xs={8}>
+                <Grid item md={8} xs={10}>
                     <h4 style={{ textAlign: 'center' }}>C6 - Organiser son développement professionnel </h4>
                     <Accordion expanded={expanded === 'panel19'} onChange={handleChange('panel19')}>
                         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
