@@ -9,8 +9,8 @@ const BarreSocial = () => {
 
     return (
         <>
-            <Grid container >
-                <Grid item xs={10}>
+            <Grid container className="displayBarre" style={{ paddingBottom: '2rem' }}>
+                <Grid item lg={10} md={10} xs={0}>
                     <h1 className='transitionLeft' style={{ borderTop: '1px solid #E3E2EF', marginTop: 12 }}></h1>
                 </Grid>
                 <Grid item xs={1} style={{ display: 'flex', justifyContent: 'space-evenly' }}>

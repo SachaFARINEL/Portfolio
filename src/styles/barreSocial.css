@@ -3,3 +3,10 @@
 .twitter:hover {
   color: #8a6fff !important;
 }
+
+@media only screen and (max-width: 860px) {
+  .displayBarre {
+    display: flex;
+    justify-content: center;
+  }
+}

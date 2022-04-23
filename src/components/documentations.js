@@ -23,7 +23,7 @@ const Documentations = (props) => {
     return (
         <>
 
-            <Grid item xs={2} style={{ display: 'flex', justifyContent: 'center' }} >
+            <Grid item md={2} xs={3} style={{ display: 'flex', justifyContent: 'center' }} >
 
                 <div className='containerDoc' onClick={handleOpen} >
                     <div className='transitionGrowth' style={{ width: '20vh', height: '20vh', overflow: 'hidden', borderRadius: '2vh', background: props.backgroundCouleur }}>
