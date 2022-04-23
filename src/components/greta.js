@@ -19,7 +19,7 @@ const Greta = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography style={{ fontFamily: "Lato", fontSize: "0.9vw", color: "#757384" }}>
-                                <p>La formation se déroule de manière condensée sur 9 mois dont 10 semaines en stage en entreprise</p>
+                                <p>La formation se déroule de manière condensée sur 9 mois dont 10 semaines de stage en entreprise</p>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>

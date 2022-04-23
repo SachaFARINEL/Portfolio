@@ -10,13 +10,10 @@ const Entete = () => {
         <>
 
             <Grid container justifyContent="center">
-                <Grid item xs={8} style={{ height: '10vh', display: 'flex', alignItems: 'center', marginBottom: 100 }}>
-                    <Grid container >
+                <Grid item xs={8} style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: 100 }}>
+                    {/* <Grid container >
                         <Grid item xs={9} style={{ display: 'flex' }}>
                             <Grid container alignItems="center">
-                                <Grid item xs={3} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                    <a href="#"><img style={{ maxWidth: 50, marginBottom: 5 }} src="/assets/logo.png" alt="My Happy SVG" /></a>
-                                </Grid>
                                 <Grid item xs={3} style={{ display: 'flex', justifyContent: 'center' }}>
                                     <h6 className='menuHeader'>About</h6>
                                 </Grid>
@@ -34,7 +31,27 @@ const Entete = () => {
                                 Let's talk
                             </Button>
                         </Grid>
-                    </Grid>
+                    </Grid> */}
+                    <ul style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem' }}>
+                        <li style={{ display: "flex" }}>
+                            <a href='#maPresentation' className="menuHeader">A propos</a>
+                        </li>
+                        <li >
+                            <a href='#leBTS' className="menuHeader">BTS</a>
+                        </li>
+                        <li >
+                            <a href="#mesProjets" className="menuHeader">Projets</a>
+                        </li>
+                        <li >
+                            <a href="#mesDocumentations" className="menuHeader" >Documentations</a>
+                        </li>
+                        <li >
+                            <a href='#mesCompétences' className="menuHeader">Compétences</a>
+                        </li>
+                        <li >
+                            <a href='#maVeille' className="menuHeader">Veille technologique</a>
+                        </li>
+                    </ul>
                 </Grid>
             </Grid>
         </>

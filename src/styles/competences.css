@@ -3,3 +3,10 @@
   font-family: "Inter";
   font-size: 2vh;
 }
+.pdfIcon {
+  color: #221e41;
+}
+
+.pdfIcon:hover {
+  color: #8a6fff;
+}

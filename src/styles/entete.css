@@ -4,10 +4,12 @@
   font-weight: 400;
   font-size: 1rem;
   color: #221e41;
-  line-height: 20px;
 }
 .menuHeader:hover {
   color: black;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
+}
+li {
+  list-style-type: none;
 }

@@ -14,6 +14,7 @@ import Presentation from './presentation';
 
 
 
+
 function App() {
 
   return (
@@ -133,7 +134,7 @@ function App() {
         <Grid item xs={10}>
           <Grid container justifyContent="center">
             <Grid item xs={8} style={{ margin: '5vh' }}>
-              <h1 id="mesProjets" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41' }}>Mes compétences développées <Button href='assets/pdf/Preuves/FARINEL_Sacha_TableauDeSynthèse.pdf' download="TableauDeSynthèse_FARINEL_Sacha" variant="outlined" size='small' startIcon={<CloudDownloadIcon />} style={{ marginLeft: 20, color: '#8A6FFF', borderColor: '#8A6FFF' }}>
+              <h1 id="mesCompétences" style={{ fontFamily: 'Inter', fontSize: '2vw', color: '#221e41' }}>Mes compétences développées <Button href='assets/pdf/Preuves/FARINEL_Sacha_TableauDeSynthèse.pdf' download="TableauDeSynthèse_FARINEL_Sacha" variant="outlined" size='small' startIcon={<CloudDownloadIcon />} style={{ marginLeft: 20, color: '#8A6FFF', borderColor: '#8A6FFF' }}>
                 Télécharger
               </Button></h1>
 
