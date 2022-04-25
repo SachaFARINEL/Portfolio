@@ -6,15 +6,11 @@ import MainPresentation from './mainPresentation';
 import BarreSocial from './barreSocial';
 import Documentations from './documentations';
 import Competences from './competences';
+import CV from './cv';
+import Comp from './comp';
 import { Button, Grid } from '@mui/material';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import Presentation from './presentation';
-
-
-
-function isDisplay() {
-
-}
 
 
 function App() {
@@ -44,9 +40,7 @@ function App() {
           <Grid container justifyContent="center">
 
             <Grid item md={8} xs={10} style={{ margin: '2rem' }}>
-              <h1 id="maPresentation" style={{ fontFamily: 'Inter', fontSize: '1.8rem', color: '#221e41' }}>A propos <Button href='assets/pdf/CV_FARINEL_Sacha.pdf' download="CV_FARINEL_Sacha" variant="outlined" size='small' startIcon={<CloudDownloadIcon />} style={{ marginLeft: '2rem', color: '#8A6FFF', borderColor: '#8A6FFF' }}>
-                Mon CV
-              </Button></h1>
+              <CV />
             </Grid>
             <Grid item xs={10}>
               <Presentation />
@@ -138,10 +132,7 @@ function App() {
         <Grid item md={10} xs={12}>
           <Grid container justifyContent="center">
             <Grid item md={8} xs={10} style={{ margin: '5vh' }}>
-              <h1 id="mesCompétences" style={{ fontFamily: 'Inter', fontSize: '1.9rem', color: '#221e41' }}>Compétences développées <Button href='assets/pdf/Preuves/FARINEL_Sacha_TableauDeSynthèse.pdf' download="TableauDeSynthèse_FARINEL_Sacha" variant="outlined" size='small' startIcon={<CloudDownloadIcon />} style={{ marginLeft: 20, color: '#8A6FFF', borderColor: '#8A6FFF' }}>
-                Télécharger
-              </Button></h1>
-
+              <Comp />
             </Grid>
             <Grid item md={10} >
               <Competences />
