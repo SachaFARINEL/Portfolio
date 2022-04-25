@@ -10,3 +10,13 @@
 .pdfIcon:hover {
   color: #8a6fff;
 }
+
+.lienPreuves {
+  text-decoration: none;
+  color: #757384;
+}
+
+.lienPreuves:hover {
+  color: #221e41;
+  font-weight: 600;
+}

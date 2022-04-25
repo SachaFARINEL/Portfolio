@@ -1,10 +1,9 @@
-import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import * as React from 'react';
 import { Button, Modal } from '@mui/material';
 import '../styles/styles.css'
 import { Box } from '@mui/system';
 
-const CV = () => {
+const TitreModal = (props) => {
 
     const style = {
         position: 'absolute',
@@ -24,8 +23,8 @@ const CV = () => {
 
     return (
         <>
-            <h1 id="maPresentation" style={{ fontFamily: 'Inter', fontSize: '1.8rem', color: '#221e41' }}>A propos <Button onClick={handleOpen} variant="outlined" size='small' startIcon={<CloudDownloadIcon />} style={{ marginLeft: '2rem', color: '#8A6FFF', borderColor: '#8A6FFF' }}>
-                Mon CV
+            <h1 id="maPresentation" style={{ fontFamily: 'Inter', fontSize: '1.8rem', color: '#221e41' }}>{props.titre}<Button onClick={handleOpen} variant="outlined" size='small' startIcon={props.icon} style={{ marginLeft: '2rem', color: '#8A6FFF', borderColor: '#8A6FFF' }}>
+                {props.button}
             </Button></h1>
 
             <Modal
@@ -36,10 +35,10 @@ const CV = () => {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={style}>
-                    <iframe src="assets/pdf/CV_FARINEL_Sacha.pdf" width='100%' height='100%'></iframe>
+                    <iframe src={props.url} width='100%' height='100%'></iframe>
                 </Box>
             </Modal>
         </>
     )
 };
-export default CV;
+export default TitreModal;

@@ -35,7 +35,7 @@ const Projets = (props) => {
 
                 <Grid item md={8} xs={12} style={{ marginBottom: '1.5rem' }}>
                     <div className="divProjets">
-                        <a style={{ textDecoration: 'none' }} className='cardProjets' target='_blank' href='https://github.com/SachaFARINEL/Promed'>
+                        <a style={{ textDecoration: 'none' }} className='cardProjets' target='_blank' href='https://promo22.sio56.org/sacha/E5/ProMED_PHP/PROMED/'>
                             <Card>
                                 <CardContent style={{ background: '#FAFAFF', maxHeight: '10rem' }}>
                                     <Grid container>

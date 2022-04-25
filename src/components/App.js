@@ -1,16 +1,19 @@
 import * as React from 'react';
 import Entete from './entete';
+import Titre from './titre';
+import TitreModal from './titreModal';
 import Greta from './greta';
 import Projets from './projets';
 import MainPresentation from './mainPresentation';
 import BarreSocial from './barreSocial';
 import Documentations from './documentations';
 import Competences from './competences';
-import CV from './cv';
-import Comp from './comp';
-import { Button, Grid } from '@mui/material';
-import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import { Grid } from '@mui/material';
 import Presentation from './presentation';
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import SourceIcon from '@mui/icons-material/Source';
 
 
 function App() {
@@ -40,7 +43,12 @@ function App() {
           <Grid container justifyContent="center">
 
             <Grid item md={8} xs={10} style={{ margin: '2rem' }}>
-              <CV />
+              <TitreModal
+                titre="A propos"
+                icon={<AccountBoxIcon />}
+                button="Mon CV"
+                url="assets/pdf/CV_FARINEL_Sacha.pdf"
+              />
             </Grid>
             <Grid item xs={10}>
               <Presentation />
@@ -56,7 +64,12 @@ function App() {
         <Grid item md={10} xs={12} style={{ background: '#FAFAFF' }}>
           <Grid container justifyContent="center" style={{ paddingBottom: '3rem' }}>
             <Grid item md={8} xs={10} style={{ margin: '1rem' }}>
-              <h1 id="leBTS" style={{ fontFamily: 'Inter', fontSize: '1.8rem', color: '#221e41', display: "flex", alignItems: "center" }}>Présentation du BTS <a style={{ display: "flex", alignItems: "center", marginLeft: "1rem" }} target='_blank' href="https://sio56.org"><img style={{ width: "1.5rem", marginTop: "0.3rem" }} src="assets/navigateur.gif"></img></a></h1>
+              <Titre
+                titre="Présentation du BTS"
+                url="https://sio56.org/"
+                icon={<AccountBalanceIcon />}
+                button="Le site de la formation"
+              />
               <span style={{ fontSize: "1.2rem", fontFamily: "Lato", color: "#757384" }}>Services informatiques aux organisations option solutions logicielles et applications métiers</span>
             </Grid>
             <Grid item xs={10} >
@@ -76,7 +89,12 @@ function App() {
         <Grid item md={10} xs={12}>
           <Grid container justifyContent="center">
             <Grid item md={8} xs={10} style={{ margin: '1rem' }}>
-              <h1 id="mesProjets" style={{ fontFamily: 'Inter', fontSize: '1.8rem', color: '#221e41' }}>Mes projets </h1>
+              <Titre
+                titre="Mes projets"
+                url="https://promo22.sio56.org/sacha/E5/"
+                icon={<SourceIcon />}
+                button="Documentations et sources"
+              />
             </Grid>
             <Grid item xs={10} >
               <Projets />
@@ -132,7 +150,12 @@ function App() {
         <Grid item md={10} xs={12}>
           <Grid container justifyContent="center">
             <Grid item md={8} xs={10} style={{ margin: '5vh' }}>
-              <Comp />
+              <TitreModal
+                titre="Compétences développées"
+                icon={<CloudDownloadIcon />}
+                button="Télécharger"
+                url="assets/pdf/Preuves/FARINEL_Sacha_TableauDeSynthèse.pdf"
+              />
             </Grid>
             <Grid item md={10} >
               <Competences />
