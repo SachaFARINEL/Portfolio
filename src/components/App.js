@@ -44,6 +44,7 @@ function App() {
 
             <Grid item md={8} xs={10} style={{ margin: '2rem' }}>
               <TitreModal
+                id="maPresentation"
                 titre="A propos"
                 icon={<AccountBoxIcon />}
                 button="Mon CV"
@@ -65,6 +66,7 @@ function App() {
           <Grid container justifyContent="center" style={{ paddingBottom: '3rem' }}>
             <Grid item md={8} xs={10} style={{ margin: '1rem' }}>
               <Titre
+                id="leBTS"
                 titre="Présentation du BTS"
                 url="https://sio56.org/"
                 icon={<AccountBalanceIcon />}
@@ -90,6 +92,7 @@ function App() {
           <Grid container justifyContent="center">
             <Grid item md={8} xs={10} style={{ margin: '1rem' }}>
               <Titre
+                id="mesProjets"
                 titre="Mes projets"
                 url="https://promo22.sio56.org/sacha/E5/"
                 icon={<SourceIcon />}
@@ -145,12 +148,13 @@ function App() {
         <Grid item md={1} xs={0} style={{ background: '#FAFAFF' }}></Grid>
       </Grid>
 
-      <Grid container>
+      <Grid container style={{ margin: '5vh' }}>
         <Grid item md={1} xs={0}></Grid>
         <Grid item md={10} xs={12}>
           <Grid container justifyContent="center">
             <Grid item md={8} xs={10} style={{ margin: '5vh' }}>
               <TitreModal
+                id="mesCompétences"
                 titre="Compétences développées"
                 icon={<CloudDownloadIcon />}
                 button="Télécharger"
@@ -164,6 +168,40 @@ function App() {
         </Grid>
         <Grid item md={1}></Grid>
       </Grid>
+
+      <Grid container>
+        <Grid item md={1} xs={0} style={{ background: '#FAFAFF' }}></Grid>
+        <Grid item md={10} xs={12} style={{ background: '#FAFAFF' }}>
+          <Grid container justifyContent="center">
+            <Grid item md={8} xs={10} style={{ margin: '5vh' }}>
+              <TitreModal
+                id="maVeille"
+                titre="Veille technologique"
+                icon={<CloudDownloadIcon />}
+                button="Télécharger"
+                url="assets/pdf/OrdinateurQuantique_VeilleTechnologique_FARINEL_Sacha.pdf"
+              />
+            </Grid>
+            <Grid item md={10} >
+              <Grid container justifyContent='center'>
+                <Grid item md={8} xs={10} style={{ fontFamily: "Lato", fontSize: "1.2rem", color: "#757384", textAlign: 'justify' }}>
+                  <p>L'atout principal de la veille technologique est d'identifier ou d'anticiper des innovations par secteurs d'activité. Les sources de veille technologique constituent une information stratégique incontournable pour devancer, développer et exploiter des inventions.</p>
+                  <p>Pour ma veille technologique, j'ai choisi de m'intéresser à <strong style={{ color: 'black' }}>l'ordinateur quantique</strong>. J'explique dans celle-ci comment cela marche réellement, sur quels principes de la physique quantique il repose, mais aussi ce qu'il pourra apporter dans différents secteurs et les limites d'une telle technologie</p>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item md={1} style={{ background: '#FAFAFF' }}></Grid>
+      </Grid>
+
+
+      <Grid container style={{ background: '#B2A0FF', borderTopRightRadius: '3rem', borderTopLeftRadius: '3rem', height: '10vh' }}>
+        <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          Développé en ReactJS par © FARINEL Sacha
+        </Grid>
+      </Grid>
+
     </>
   );
 }

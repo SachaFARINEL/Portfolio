@@ -23,7 +23,7 @@ const TitreModal = (props) => {
 
     return (
         <>
-            <h1 id="maPresentation" style={{ fontFamily: 'Inter', fontSize: '1.8rem', color: '#221e41' }}>{props.titre}<Button onClick={handleOpen} variant="outlined" size='small' startIcon={props.icon} style={{ marginLeft: '2rem', color: '#8A6FFF', borderColor: '#8A6FFF' }}>
+            <h1 id={props.id} style={{ fontFamily: 'Inter', fontSize: '1.8rem', color: '#221e41' }}>{props.titre}<Button onClick={handleOpen} variant="outlined" size='small' startIcon={props.icon} style={{ marginLeft: '2rem', color: '#8A6FFF', borderColor: '#8A6FFF' }}>
                 {props.button}
             </Button></h1>
 
